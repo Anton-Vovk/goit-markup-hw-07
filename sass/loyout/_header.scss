@@ -1,0 +1,111 @@
+.logo {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-right: 94px;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+}
+
+.first-word-logo {
+  color: $accent-color;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav-list-link {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: $main-color;
+  transition: color 250ms $main-timing-function;
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 52px;
+}
+
+.address-header {
+  margin-left: auto;
+}
+
+.address-list-header {
+  display: flex;
+}
+.address-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.address-link-mail,
+.address-link-tel {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: $discription-color;
+  display: flex;
+  align-items: center;
+  transition: color 250ms $main-timing-function;
+}
+
+.letter-svg {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.phone-svg {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus,
+.address-link-mail:hover,
+.address-link-mail:focus,
+.address-link-tel:hover,
+.address-link-tel:focus {
+  color: $accent-color;
+}
+
+.active {
+  color: $accent-color;
+  position: relative;
+}
+
+.active .nav-list-link::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $accent-color;
+  border-radius: 4px;
+  bottom: -33px;
+}
+
+.header-portfolio {
+  border-bottom: 1px solid #ececec;
+}

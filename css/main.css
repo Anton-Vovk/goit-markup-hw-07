@@ -43,8 +43,33 @@ img {
 .container-header {
   display: flex;
   align-items: center;
-  /* padding-top: 25px;
-  padding-bottom: 25px; */
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-right: 94px;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+}
+
+.first-word-logo {
+  color: #2196f3;
+}
+
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .modal-btn {
@@ -60,6 +85,26 @@ img {
   border-radius: 4px;
   border-style: none;
   padding: 11px 32px;
+  cursor: pointer;
+}
+
+.modal-btn-send {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+  width: 200px;
+  height: 50px;
+  padding: 10px 55px;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .social-list {
@@ -160,6 +205,11 @@ img {
   fill: #2196f3;
 }
 
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal-form-title {
   font-weight: 700;
   font-size: 20px;
@@ -168,11 +218,6 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
   padding-bottom: 12px;
-}
-
-.modal-form {
-  display: flex;
-  flex-direction: column;
 }
 
 .modal-form-field {
@@ -190,14 +235,9 @@ img {
   margin-top: 4px;
 }
 
-.modal-form-input:focus,
-.modal-form-message:focus {
+.modal-form-input:focus, .modal-form-message:focus {
   outline: none;
   border: 1px solid #2196f3;
-}
-
-.modal-form-input:focus + .modal-form-svg-icon {
-  fill: #2196f3;
 }
 
 .modal-form-input {
@@ -208,15 +248,6 @@ img {
   border-radius: 4px;
   padding-left: 42px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form-message-field {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.167;
-  letter-spacing: 0.01em;
-  color: #757575;
-  padding-bottom: 4px;
 }
 
 .modal-form-message {
@@ -238,6 +269,15 @@ img {
   line-height: 1.143;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-message-field {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: #757575;
+  padding-bottom: 4px;
 }
 
 .modal-form-svg-icon {
@@ -279,44 +319,13 @@ img {
   color: #2196f3;
 }
 
+.modal-form-input:focus + .modal-form-svg-icon {
+  fill: #2196f3;
+}
+
 .modal-form-policy:checked + .modal-form-policy-label::before {
   border: 1px solid #2196f3;
   background-color: #2196f3;
-}
-
-.modal-btn-send {
-  width: 200px;
-  height: 50px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-style: none;
-  padding: 10px 55px;
-  margin: 0 auto;
-  cursor: pointer;
-}
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  color: #000000;
-  margin-right: 94px;
-  animation-duration: 2000ms;
-  animation-iteration-count: infinite;
-}
-
-.first-word-logo {
-  color: #2196f3;
 }
 
 .nav {
@@ -414,22 +423,6 @@ img {
 
 .header-portfolio {
   border-bottom: 1px solid #ececec;
-}
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  color: #000000;
-  margin-right: 94px;
-  animation-duration: 2000ms;
-  animation-iteration-count: infinite;
-}
-
-.first-word-logo {
-  color: #2196f3;
 }
 
 .nav {
@@ -761,17 +754,6 @@ img {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.logo-footer {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  display: inline-block;
-  margin-bottom: 20px;
 }
 
 .adreess-link-maps-foot,

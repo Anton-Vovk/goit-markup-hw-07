@@ -152,6 +152,10 @@
     left: 12px;
     transform: translateY(-50%);
     transition: fill 250ms $main-timing-function;
+
+    .modal-form-input:focus + & {
+      fill: $accent-color;
+    }
   }
   &-policy-label {
     font-weight: 400;
@@ -177,6 +181,10 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
+    .modal-form-policy:checked + &::before {
+      border: 1px solid $accent-color;
+      background-color: $accent-color;
+    }
 
     & a {
       text-decoration-line: underline;
@@ -185,9 +193,9 @@
   }
 }
 
-.modal-form-input:focus + .modal-form-svg-icon {
-  fill: $accent-color;
-}
+// .modal-form-input:focus + .modal-form-svg-icon {
+//   fill: $accent-color;
+// }
 
 // .modal-form-input {
 //   display: block;

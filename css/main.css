@@ -132,8 +132,8 @@ img {
 
 .backdrop {
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   overflow-y: auto;
@@ -311,7 +311,7 @@ img {
   background-color: #2196f3;
 }
 
-.modal-form-policy-label a {
+.modal-form .modal-form-policy-label a {
   text-decoration-line: underline;
   color: #2196f3;
 }
@@ -505,6 +505,7 @@ img {
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg.jpg);
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -755,9 +756,9 @@ img {
   margin-right: 70px;
 }
 
-.adreess-link-maps-foot,
-.adreess-link-mail-foot,
-.adreess-link-tel-foot {
+.address-link-maps-foot,
+.address-link-mail-foot,
+.address-link-tel-foot {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -766,7 +767,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.adreess-link-maps-foot {
+.address-link-maps-foot {
   color: #ffffff;
 }
 
